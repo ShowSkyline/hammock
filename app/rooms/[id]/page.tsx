@@ -12,7 +12,7 @@
     import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
     export default function BookingPage({ params }: { params: { id: string } }) {
-      const [date, setDate] = useState<Date>()
+      const [date, setDate] = useState<Date | null>(null)
 
       return (
         <div className="container mx-auto px-4 py-8">
